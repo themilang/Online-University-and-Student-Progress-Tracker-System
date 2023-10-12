@@ -1,3 +1,4 @@
 express.json =  prevent undifined when data is sent from postman  json format pass 
 mongo sanitize = direct login help
-fcm token  (firebase token) generate when login  need in feature like push notification like where the notification is to be send
+fcm token  (firebase token) generate when login  need in feature like push notification like where the notification is to be send 
+authentication stratigies for backend  password js is a middleware

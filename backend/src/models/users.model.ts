@@ -3,6 +3,7 @@ import mongoose from 'mongoose';
 const userSchema = new mongoose.Schema({
     fullname:{
         type: String,
+        minlength:[5,'Minimum length is 5']
 
     },
     email:{

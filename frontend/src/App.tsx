@@ -1,21 +1,19 @@
-import { useState } from 'react'
-import Button from '@mui/material/Button';
-
 
 
 import './App.css'
+import SignIn from './pages/SignIn';
+import {Routes , Route} from 'react-router-dom'
 
 function App() {
-  const [count, setCount] = useState(0)
+ 
 
   return (
     <>
-      <h1>Elearning Frontend</h1>
 
-
+<Routes>
+  <Route  path='/' element={<SignIn/>}  />
+</Routes>
       
-      <Button variant="contained">Contained</Button>
-
 
     </>
   )
