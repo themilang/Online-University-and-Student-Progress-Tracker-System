@@ -13,6 +13,7 @@ export const passportInitialize = () => {
         callbackURL: "/auth/google/callback"
     },
         async function (accessToken: string, refreshToken: string, profile: any, cb: any) {
+            console.log(profile)
             const existingUser: any = await User.findOne({ email: profile['_json'].email });
 
             if (existingUser) {
