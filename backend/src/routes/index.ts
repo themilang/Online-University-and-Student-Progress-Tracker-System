@@ -4,7 +4,7 @@ import jwt from 'jsonwebtoken';
 
 const router = express.Router();
 
-router.get('/google', passport.authenticate('google', { scope: ['profile', 'email'] }));
+router.get('/auth/google', passport.authenticate('google', { scope: ['profile', 'email'] }));
 
 router.get('/login/failed', (req: Request, res: Response) => {
     res.status(401).json({
@@ -12,7 +12,7 @@ router.get('/login/failed', (req: Request, res: Response) => {
     })
 })
 
-router.get('/google/callback', (req, res, next) => {
+router.get('/auth/google/callback', (req, res, next) => {
     passport.authenticate('google', (err: any, user: any) => {
         if (err) {
             return next(err);
