@@ -8,7 +8,6 @@ import { passportInitialize } from './middlewares/passport.middleware';
 import cors from 'cors';
 import { Server, Server as SocketIOServer } from 'socket.io';
 import http from 'http';
-// import initializeFirebaseApp from './firebase/initializeFirebase';
 
 
 const app = express();
