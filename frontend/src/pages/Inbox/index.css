@@ -1,0 +1,44 @@
+.chat-window {
+    margin: auto;
+    width: 600px;
+    height: 420px;
+  }
+  
+  .message-content {
+    width: auto;
+    height: auto;
+    min-height: 40px;
+    max-height: 120px;
+    border-radius: 5px;
+    color: white;
+    display: flex;
+    align-items: center;
+    margin-right: 5px;
+    margin-left: 5px;
+    overflow-wrap: break-word;
+    word-break: break-all;
+  }
+  
+  #you {
+    justify-content: flex-start;
+  }
+  
+  #other {
+    justify-content: flex-end;
+  }
+  
+  .chat-footer {
+    height: 40px;
+    border: 1px solid rgb(102, 202, 102);
+    border-top: none;
+    display: flex;
+  }
+  
+  .chat-footer input {
+    height: 100%;
+    flex: 85%;
+    border: 0;
+    padding: 0 0.7rem;
+    font-size: 16px;
+  }
+  
